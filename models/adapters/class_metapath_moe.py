@@ -220,7 +220,7 @@ class ClassMetaPathMoE(nn.Module):
         final_logits = self.classifier(
             final_embs
         )
-        final_logits = final_logits + 0.1 * logits
+        final_logits = final_logits + 0.3 * logits
         return (
             final_logits,
             scores.detach(),
