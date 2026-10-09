@@ -216,8 +216,6 @@ def main():
         str(args.mineral_epochs),
         "--lr",
         str(args.mineral_lr),
-        "--baseline",
-        str(0),
     ]
 
     if args.freeze_backbone:
@@ -256,8 +254,6 @@ def main():
         str(args.classification_lr),
         "--dropout",
         str(args.dropout),
-        "--baseline",
-        str(0),
     ]
 
     if args.freeze_backbone:
